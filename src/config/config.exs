@@ -13,10 +13,10 @@ config :inmana,
 # Configures the endpoint
 config :inmana, InmanaWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "pfT0D66w4OkBb7Q4wPEz3F3SosEWpc2tNvu8Wb2HGUwQxaGOzlNnTtIOItw6GXBv",
+  secret_key_base: "CKt8FW4cnJlFbz0Xs8/jOLOUZmi4O5SOo8BPido8x+nWEmkZCuIc8WIqi28bp9Z+",
   render_errors: [view: InmanaWeb.ErrorView, accepts: ~w(json), layout: false],
   pubsub_server: Inmana.PubSub,
-  live_view: [signing_salt: "5nZfrs0u"]
+  live_view: [signing_salt: "L+vHoyB2"]
 
 # Configures Elixir's Logger
 config :logger, :console,
