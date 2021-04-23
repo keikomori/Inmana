@@ -7,7 +7,7 @@ defmodule InmanaWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_inmana_key",
-    signing_salt: "GUTHYq6E"
+    signing_salt: "GlsDePgE"
   ]
 
   socket "/socket", InmanaWeb.UserSocket,

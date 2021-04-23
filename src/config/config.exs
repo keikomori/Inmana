@@ -10,13 +10,17 @@ use Mix.Config
 config :inmana,
   ecto_repos: [Inmana.Repo]
 
+config :inmana, Inmana.Repo,
+  migration_primary_key: [tupe: :binary_id],
+  migration_foreign_key: [tupe: :binary_id]
+
 # Configures the endpoint
 config :inmana, InmanaWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "CKt8FW4cnJlFbz0Xs8/jOLOUZmi4O5SOo8BPido8x+nWEmkZCuIc8WIqi28bp9Z+",
+  secret_key_base: "49qG/XnseAHoryTqmtLIj9A0lohJ2O+CTGXKy2ef3onAikkrpV7cMD4HP3cns4Vh",
   render_errors: [view: InmanaWeb.ErrorView, accepts: ~w(json), layout: false],
   pubsub_server: Inmana.PubSub,
-  live_view: [signing_salt: "L+vHoyB2"]
+  live_view: [signing_salt: "vhj9gus0"]
 
 # Configures Elixir's Logger
 config :logger, :console,
